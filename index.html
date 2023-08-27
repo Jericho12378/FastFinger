@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Finger</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer ></script>
+    <script src="https://kit.fontawesome.com/619438713c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo__wrapper">
+            <i class="fa-solid fa-computer-mouse"></i>
+        </div>
+        <div class="gameName__wrapper">
+            <h3 class="gameName">Fast Finger</h3>
+        </div>
+    </header>
+    <div class="body">
+        <div class="game__wrapper">
+            <div class="timer__wrapper"> 
+                <p class="timer">Timer: </p>
+            </div>
+            <div class="box__wrapper">
+                <div class="box1 box" onclick="countdown(10)">10s</div>
+                <div class="box2 box" onclick="countdown(20)">20s</div>
+                <div class="box3 box"onclick="countdown(30)">30s</div>
+            </div>
+            <div class="progress__wrapper">
+                <div class="progress">
+                    <p class="counter">Choose time before clicking
+                        the button
+                    </p>
+                </div>
+            </div>
+            <div class="button__wrapper">
+                <button class="btn" disabled
+                 onclick="buttonCLicked()">Click me</button>
+            </div>
+        </div>
+        <div class="modal__wrapper">
+            <div class="modal">
+                <h1 >Congratulations!</h1>
+                <h2 class="newHighScore" hidden>New High Score!</h2>
+                <h1 class="score"></h1>
+                <i class="fa-solid fa-arrow-rotate-right"
+                onclick="refresh()"></i>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+</body>
+</html>
